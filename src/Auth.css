@@ -1,0 +1,244 @@
+
+.auth-screen {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  padding: 32px 20px;
+  background: #08090d;
+  color: #fff;
+  font-family: inherit;
+}
+
+.auth-glow {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.auth-glow-one {
+  background: #7047ff;
+  top: -180px;
+  left: -120px;
+}
+
+.auth-glow-two {
+  background: #00b8a9;
+  bottom: -220px;
+  right: -100px;
+}
+
+.auth-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 440px;
+  padding: 36px;
+  border: 1px solid #292b38;
+  border-radius: 24px;
+  background: rgba(17, 18, 26, 0.94);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+}
+
+.auth-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.auth-logo {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: linear-gradient(135deg, #8058ff, #4b35c8);
+  font-size: 17px;
+  letter-spacing: -1px;
+}
+
+.auth-heading {
+  text-align: center;
+  margin: 34px 0 25px;
+}
+
+.auth-sparkle {
+  color: #a18aff;
+  margin-bottom: 12px;
+}
+
+.auth-heading h1 {
+  font-size: 27px;
+  margin: 0 0 10px;
+  letter-spacing: -0.8px;
+}
+
+.auth-heading p {
+  color: #9293a3;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.auth-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5px;
+  border-radius: 12px;
+  background: #0d0e14;
+  margin-bottom: 25px;
+}
+
+.auth-tabs button {
+  border: 0;
+  border-radius: 9px;
+  padding: 12px;
+  color: #999aaa;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  transition: 0.2s;
+}
+
+.auth-tabs button.active {
+  background: #29233f;
+  color: #fff;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.auth-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  color: #c5c5d0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.auth-input {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-height: 52px;
+  padding: 0 15px;
+  border: 1px solid #30313e;
+  border-radius: 12px;
+  background: #101118;
+  color: #85869a;
+  transition: border-color 0.2s;
+}
+
+.auth-input:focus-within {
+  border-color: #8664ff;
+}
+
+.auth-input input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #fff;
+  font: inherit;
+  font-size: 14px;
+}
+
+.auth-input input::placeholder {
+  color: #666778;
+}
+
+.auth-eye {
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  color: #9293a3;
+  cursor: pointer;
+}
+
+.auth-submit {
+  min-height: 52px;
+  border: 0;
+  border-radius: 12px;
+  margin-top: 5px;
+  background: linear-gradient(110deg, #8058ff, #5940d8);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.auth-submit:hover {
+  transform: translateY(-1px);
+  opacity: 0.92;
+}
+
+.auth-submit:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.auth-message {
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.auth-error {
+  color: #ff9b9b;
+  background: rgba(255, 75, 75, 0.1);
+  border: 1px solid rgba(255, 75, 75, 0.2);
+}
+
+.auth-success {
+  color: #8ee5b0;
+  background: rgba(55, 190, 115, 0.1);
+  border: 1px solid rgba(55, 190, 115, 0.2);
+}
+
+.auth-terms {
+  margin: 24px 0 0;
+  color: #777889;
+  font-size: 11px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.auth-footer {
+  position: relative;
+  z-index: 1;
+  margin-top: 25px;
+  color: #696a79;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 26px 20px;
+  }
+
+  .auth-heading h1 {
+    font-size: 23px;
+  }
+}
+все
